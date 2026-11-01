@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.amazon-clone {
+    background-color: #eaeded;
+    color: #0F1111;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* Navbar */
+.az-navbar {
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.az-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.az-logo span {
+    color: #febd69;
+}
+
+.az-search {
+    display: flex;
+    flex: 1;
+    max-width: 650px;
+    margin: 0 20px;
+}
+
+.az-search input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.az-search button {
+    background-color: #febd69;
+    border: none;
+    padding: 0 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.az-right {
+    font-size: 12px;
+}
+
+.az-right strong {
+    display: block;
+    font-size: 14px;
+}
+
+/* Top Container */
+.az-top-container {
+    display: flex;
+    background: #fff;
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 8px;
+}
+
+.az-img-col {
+    display: flex;
+    gap: 15px;
+}
+
+.az-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.az-thumbnails img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 1px solid #a6b1b1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.az-thumbnails img:hover {
+    border: 2px solid #e77600;
+}
+
+.az-main-img img {
+    width: 400px;
+    height: auto;
+}
+
+.az-info-col {
+    flex: 1;
+}
+
+.az-info-col h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.az-store-link {
+    color: #007185;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.az-rating-row {
+    color: #ffa41c;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.az-rating-row .count {
+    color: #007185;
+    margin-left: 10px;
+}
+
+.az-price-row {
+    margin-top: 10px;
+}
+
+.az-price-row .discount {
+    font-size: 26px;
+    color: #CC0C39;
+    font-weight: 300;
+}
+
+.az-price-row .rs {
+    font-size: 16px;
+    position: relative;
+    top: -8px;
+    margin-left: 5px;
+}
+
+.az-price-row .amount {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.mrp {
+    font-size: 13px;
+    color: #565959;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.inclusive {
+    font-size: 12px;
+    color: #565959;
+    margin-bottom: 15px;
+}
+
+.az-highlights h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.az-highlights ul {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #565959;
+    line-height: 1.6;
+}
+
+/* Buy Box */
+.az-buy-col {
+    width: 260px;
+}
+
+.buy-card {
+    border: 1px solid #d5d9d9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.b-price {
+    font-size: 24px;
+    color: #B12704;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.b-delivery {
+    font-size: 13px;
+    color: #007185;
+    margin-bottom: 15px;
+}
+
+.b-stock {
+    color: #007600;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-cart,
+.btn-buy {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-cart {
+    background-color: #ffd814;
+}
+
+.btn-buy {
+    background-color: #ffa41c;
+}
+
+.secure {
+    font-size: 12px;
+    color: #007185;
+    text-align: center;
+}
+
+/* A+ Content Section */
+.az-aplus-section {
+    max-width: 1300px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.az-aplus-section h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.aplus-banner {
+    background: linear-gradient(135deg, #131921, #232f3e);
+    color: white;
+    padding: 50px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.aplus-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.aplus-card {
+    flex: 1;
+    background: #f7f7f7;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.aplus-card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Comparison Table */
+.az-comparison {
+    max-width: 1300px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.az-comparison h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.comp-table th,
+.comp-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.comp-table th {
+    background-color: #f8f9fa;
+}
+
+.highlight-col {
+    background-color: #f0f8ff;
+    border-left: 2px solid #007185;
+    border-right: 2px solid #007185;
+}
+
+.az-top-container,
+.az-aplus-section,
+.az-comparison {
+    width: calc(100% - 40px);
+}
+
+.az-main-img img {
+    width: min(400px, 100%);
+}
+
+.comp-table-wrapper {
+    overflow-x: auto;
+}
+
+@media (max-width: 1024px) {
+    .az-top-container {
+        flex-wrap: wrap;
+    }
+
+    .az-info-col {
+        min-width: 250px;
+    }
+
+    .az-buy-col {
+        width: 100%;
+    }
+
+    .buy-card {
+        max-width: none;
+    }
+
+    .az-main-img img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .az-navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 16px;
+    }
+
+    .az-search {
+        order: 3;
+        flex-basis: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .az-top-container {
+        width: calc(100% - 24px);
+        margin: 12px auto;
+        padding: 14px;
+        gap: 18px;
+    }
+
+    .az-img-col {
+        width: 100%;
+    }
+
+    .az-main-img {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .az-main-img img {
+        width: 100%;
+    }
+
+    .az-info-col {
+        flex-basis: 100%;
+    }
+
+    .az-info-col h1 {
+        font-size: 20px;
+    }
+
+    .az-buy-col {
+        flex-basis: 100%;
+    }
+
+    .az-aplus-section,
+    .az-comparison {
+        width: calc(100% - 24px);
+        padding: 18px 14px;
+    }
+
+    .aplus-banner {
+        padding: 28px 18px;
+    }
+
+    .aplus-grid {
+        flex-wrap: wrap;
+    }
+
+    .aplus-card {
+        flex: 1 1 200px;
+    }
+
+    .comp-table {
+        min-width: 600px;
+    }
+
+    .az-comparison {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .az-img-col {
+        gap: 8px;
+    }
+
+    .az-thumbnails img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .az-price-row .amount {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,177 @@
+.top-picks-container {
+  font-family: Arial, sans-serif;
+  background-color: #eaeded;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Top Navigation Tabs */
+.tp-nav-tabs {
+  display: flex;
+  gap: 25px;
+  border-bottom: 1px solid #d5d9d9;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.tp-tab {
+  font-size: 14px;
+  color: #007185;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tp-tab:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+.tp-tab.active {
+  color: #0f1111;
+  font-weight: bold;
+}
+
+/* Header */
+.tp-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f1111;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.tp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 15px;
+}
+
+/* Product Card */
+.tp-card {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 4px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s ease;
+}
+
+.tp-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tp-img-container {
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.tp-img-container img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.tp-title {
+  font-size: 13px;
+  color: #0f1111;
+  font-weight: normal;
+  line-height: 1.4;
+  height: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  margin-bottom: 8px;
+}
+
+.tp-rating {
+  font-size: 12px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tp-reviews {
+  color: #007185;
+}
+
+.tp-pricing {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+}
+
+.tp-currency {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0f1111;
+}
+
+.tp-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f1111;
+}
+
+.tp-mrp {
+  font-size: 11px;
+  color: #565959;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+.tp-delivery {
+  font-size: 12px;
+  color: #565959;
+  margin-top: auto;
+}
+
+.tp-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+}
+
+@media (max-width: 600px) {
+  .top-picks-container {
+    padding: 14px 12px;
+  }
+
+  .tp-nav-tabs {
+    gap: 18px;
+  }
+
+  .tp-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .tp-card {
+    min-width: 0;
+    padding: 10px;
+  }
+
+  .tp-img-container {
+    height: 135px;
+  }
+
+  .tp-title {
+    font-size: 12px;
+  }
+
+  .tp-pricing {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 350px) {
+  .tp-grid {
+    grid-template-columns: 1fr;
+  }
+}

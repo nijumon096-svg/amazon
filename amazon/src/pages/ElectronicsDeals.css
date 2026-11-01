@@ -1,0 +1,229 @@
+/* ==========================================
+   ELECTRONICS DEALS STYLES
+   ========================================== */
+
+.ed-container {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Top Categories Bar */
+.ed-top-nav {
+  display: flex;
+  gap: 25px;
+  padding: 12px 25px;
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #0f1111;
+}
+
+.ed-top-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.ed-top-nav span {
+  cursor: pointer;
+}
+
+.ed-top-nav span:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+/* Main Layout */
+.ed-main-layout {
+  display: flex;
+  padding: 20px;
+  gap: 25px;
+  background-color: #eaeded;
+}
+
+/* Sidebar */
+.ed-sidebar {
+  width: 230px;
+  flex-shrink: 0;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  height: fit-content;
+  font-size: 13px;
+}
+
+.ed-filter-group {
+  margin-bottom: 20px;
+}
+
+.ed-filter-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.ed-sub-link {
+  display: block;
+  color: #007185;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.ed-current-cat {
+  font-weight: bold;
+  color: #c45500;
+  display: block;
+  margin-left: 10px;
+}
+
+.ed-filter-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  color: #333;
+}
+
+.ed-price-link {
+  color: #007185;
+  cursor: pointer;
+}
+
+/* Content Area */
+.ed-content-area {
+  flex-grow: 1;
+}
+
+.ed-section-heading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+/* Products Grid */
+.ed-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.ed-product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s;
+}
+
+.ed-product-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.ed-img-box {
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.ed-img-box img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.ed-product-title {
+  font-size: 13px;
+  color: #0f1111;
+  line-height: 1.4;
+  height: 36px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.ed-rating-row {
+  font-size: 11px;
+  color: #007185;
+  margin-bottom: 6px;
+}
+
+.stars {
+  color: #ffa41c;
+  margin-right: 5px;
+}
+
+.ed-deal-badge {
+  background-color: #cc0c39;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px 8px;
+  width: fit-content;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+
+.ed-pricing-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.currency {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.price-val {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f1111;
+}
+
+.mrp-val {
+  font-size: 11px;
+  color: #565959;
+}
+
+.disc-val {
+  font-size: 11px;
+  color: #cc0c39;
+}
+
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================== */
+
+@media screen and (max-width: 1024px) {
+  .ed-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ed-main-layout {
+    flex-direction: column;
+  }
+  .ed-sidebar {
+    width: 100%;
+  }
+  .ed-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ed-products-grid {
+    grid-template-columns: 1fr;
+  }
+}

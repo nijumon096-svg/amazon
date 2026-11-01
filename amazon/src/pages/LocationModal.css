@@ -1,0 +1,206 @@
+/* ==========================================
+   CHOOSE YOUR LOCATION MODAL STYLES
+   ========================================== */
+
+.loc-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+}
+
+.loc-modal-box {
+  background-color: #ffffff;
+  width: 450px;
+  max-width: 90vw;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.loc-modal-header {
+  background-color: #f3f3f3;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d5d9d9;
+}
+
+.loc-modal-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f1111;
+  margin: 0;
+}
+
+.loc-close-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #0f1111;
+  font-weight: bold;
+}
+
+.loc-subtitle {
+  font-size: 13px;
+  color: #565959;
+  padding: 20px 20px 10px 20px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Address Cards */
+.loc-addresses-list {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.loc-address-card {
+  border: 1px solid #d5d9d9;
+  border-radius: 6px;
+  padding: 12px 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+.loc-address-card:hover {
+  border-color: #e77600;
+  background-color: #fcf8f5;
+}
+
+.loc-address-card.selected {
+  border: 2px solid #e77600;
+  background-color: #fcf8f5;
+}
+
+.loc-name {
+  font-size: 13px;
+  font-weight: bold;
+  color: #0f1111;
+  margin-bottom: 3px;
+}
+
+.loc-name span {
+  font-weight: normal;
+  color: #333;
+}
+
+.loc-region {
+  font-size: 12px;
+  color: #565959;
+}
+
+.loc-default-badge {
+  display: inline-block;
+  font-size: 11px;
+  color: #565959;
+  margin-top: 5px;
+  background-color: #f0f2f2;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Add Address Link */
+.loc-add-link {
+  padding: 15px 20px 5px 20px;
+}
+
+.loc-add-link a {
+  font-size: 13px;
+  color: #007185;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.loc-add-link a:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+/* Divider Text */
+.loc-divider-wrapper {
+  text-align: center;
+  border-bottom: 1px solid #d5d9d9;
+  line-height: 0.1em;
+  margin: 20px 20px;
+}
+
+.loc-divider-text {
+  background: #fff;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #565959;
+}
+
+/* Pincode Form */
+.loc-pincode-form {
+  padding: 0 20px 25px 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.loc-pincode-input {
+  flex: 1;
+  height: 35px;
+  border: 1px solid #888c8c;
+  border-radius: 6px;
+  padding: 0 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.loc-pincode-input:focus {
+  border-color: #e77600;
+  box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.3);
+}
+
+.loc-apply-btn {
+  background-color: #ffd814;
+  border: 1px solid #fcd200;
+  border-radius: 20px;
+  padding: 0 20px;
+  height: 35px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.loc-apply-btn:hover {
+  background-color: #f7ca00;
+}
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================== */
+@media screen and (max-width: 480px) {
+  .loc-modal-box {
+    width: 95vw;
+    margin: 10px;
+  }
+
+  .loc-pincode-form {
+    flex-direction: column;
+  }
+
+  .loc-apply-btn {
+    width: 100%;
+    border-radius: 6px;
+  }
+}

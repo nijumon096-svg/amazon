@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-unstyled li {
+  padding: 10px;
+  cursor: pointer;
+  color: #e47911;
+  transition: color 0.3s ease;
+}
+
+.list-unstyled li:hover {
+  text-decoration: underline;
+}
+
+.menu-link {
+  color: #565959;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.menu-link:hover {
+  color: #c45500;
+}
+
+.colum {
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.colum:hover {
+  border-color: #fff;
+}
+
+/* ==========================================
+   CUSTOM AMAZON SEARCH BAR STYLES
+   ========================================== */
+
+.custom-amazon-search {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  width: 100%;
+  max-width: 550px;
+  min-width: 0;
+  height: 40px;
+  margin: 0 10px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-amazon-search:focus-within {
+  border-color: #febd69;
+  box-shadow: 0 0 0 3px rgba(254, 189, 105, 0.4);
+}
+
+.search-dropdown-btn {
+  flex: 0 0 auto;
+  height: 100%;
+  padding: 0 12px;
+  color: #555;
+  font-size: 13px;
+  background-color: #f3f3f3;
+  border: 0;
+  border-right: 1px solid #cdcdcd;
+  cursor: pointer;
+}
+
+.search-input-box {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0 12px;
+  color: #111;
+  font-size: 15px;
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+
+.search-submit-btn {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 16px;
+  background-color: #febd69;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-submit-btn:hover {
+  background-color: #f3a847;
+}
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES (4 BREAKPOINTS)
+   ========================================== */
+
+/* 1. Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .custom-amazon-search {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 38px !important;
+    margin: 8px 0 !important;
+  }
+
+  .list-unstyled li {
+    padding: 8px 6px;
+    font-size: 13px;
+  }
+
+  .colum {
+    padding: 8px;
+  }
+
+  .search-dropdown-btn {
+    padding: 0 8px;
+    font-size: 11px;
+  }
+
+  .search-input-box {
+    padding: 0 8px;
+    font-size: 13px;
+  }
+
+  .search-submit-btn {
+    padding: 0 12px;
+  }
+}
+
+/* 2. Tablets (max-width: 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .custom-amazon-search {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 8px 0 !important;
+  }
+
+  .search-input-box {
+    font-size: 14px;
+  }
+}
+
+/* 3. Laptops (max-width: 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .custom-amazon-search {
+    max-width: 450px !important;
+    margin: 0 10px !important;
+  }
+}
+
+/* 4. Desktops (min-width: 1025px) */
+@media screen and (min-width: 1025px) {
+  .custom-amazon-search {
+    max-width: 550px !important;
+    margin: 0 15px !important;
+  }
+}
+
+/* Touch screens */
+@media (hover: none) {
+  .colum:hover {
+    border-color: transparent;
+  }
+}

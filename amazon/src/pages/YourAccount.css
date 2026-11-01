@@ -1,0 +1,139 @@
+.your-account-container {
+  background-color: #eaeded;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  padding: 30px 40px;
+}
+
+.account-title {
+  font-size: 28px;
+  font-weight: 400;
+  color: #0f1111;
+  margin-bottom: 25px;
+}
+
+/* Top Icon Cards Grid */
+.top-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.account-card {
+  background-color: #ffffff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  text-decoration: none;
+}
+
+.account-card:hover {
+  border-color: #007185;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  width: 55px;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.card-content h3 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #0f1111;
+  margin: 0 0 5px 0;
+}
+
+.card-content p {
+  font-size: 13px;
+  color: #565959;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Divider */
+.account-divider {
+  border: none;
+  border-top: 1px solid #d5d9d9;
+  margin: 30px 0;
+}
+
+/* Bottom Sections List Grid */
+.bottom-sections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.section-box {
+  background-color: transparent;
+}
+
+.section-box h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #0f1111;
+  margin-bottom: 12px;
+}
+
+.section-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-list li {
+  margin-bottom: 8px;
+}
+
+.section-list li a {
+  font-size: 14px;
+  color: #007185;
+  text-decoration: none;
+}
+
+.section-list li a:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+.top-cards-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+
+.bottom-sections-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+
+@media (max-width: 600px) {
+  .your-account-container {
+    padding: 22px 14px;
+  }
+
+  .account-title {
+    font-size: 25px;
+  }
+
+  .top-cards-grid,
+  .bottom-sections-grid {
+    gap: 14px;
+  }
+
+  .account-card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .card-icon {
+    width: 46px;
+    height: 44px;
+  }
+}
